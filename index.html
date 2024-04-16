@@ -21,44 +21,63 @@
   <title>NLW Unite</title>
 </head>
 <body>
-  <form onsubmit="addAttendee(event)">
-    <fieldset>
-      <legend>Inscrição</legend>
+  <div class="container">
+    <header>
+      <img src="./assets/logo.svg" alt="Logomarca da aplicação (um sinal de maior e menos com uma barra dentro)">
+    </header>
+  
+    <form onsubmit="addAttendee(event)">
+      <fieldset>
+        <legend>Inscrição</legend>
+  
+        <div>
+          <div class="input-wrapper">
+            <img src="./assets/user.svg" alt="Ícone indicativo para digitar nome">
+            <input
+              type="text"
+              placeholder="Nome completo"
+              name="name"
+              required
+            />
+          </div>
+          <div class="input-wrapper">
+            <img src="./assets/email.svg" alt="Ícone indicativo para digitar e-mail">
+            <input
+              type="email"
+              placeholder="E-mail"
+              name="email"
+              required
+            />
+          </div>
+          <button>
+            Realizar inscrição
+          </button>
+        </div>
+      </fieldset>
+    </form>
+  
+    <section class="attendee-list">
+      <h2>Participantes</h2>
 
       <div>
-        <input
-          type="text"
-          placeholder="Nome completo"
-          name="name"
-          required
-        />
-        <input
-          type="email"
-          placeholder="E-mail"
-          name="email"
-          required
-        />
-        <button>
-          Realizar inscrição
-        </button>
-      </div>
-    </fieldset>
-  </form>
-
-  <table style="width: 100%;">
-    <thead>
-      <tr>
-        <th>Participante</th>
-        <th>Data de inscrição</th>
-        <th>Data de check-in</th>
-      </tr>
-    </thead>
-
-    <tbody>
+        <table style="width: 100%;">
+          <thead>
+            <tr>
+              <th>Participante</th>
+              <th>Data de inscrição</th>
+              <th>Data de check-in</th>
+            </tr>
+          </thead>
       
-    </tbody>
-  </table>
+          <tbody>
+            
+          </tbody>
+        </table>
+      </div>
+    </section>
+  
+    <script src="./js/script..js"></script>
+  </div>
 
-  <script src="./js/script..js"></script>
 </body>
 </html>
