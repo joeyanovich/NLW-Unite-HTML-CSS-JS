@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, table, input, button {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+body {
+  background-color: #121214;
+  color: #FFF;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table thead {
+  font-size: 0.875rem;
+  line-height: 1rem;
+}
+
+thead th,
+tbody td {
+  padding: 0.75rem 1rem;
+}
+
+tbody td {
+  font-size: 0.875rem;
+  line-height: 15px;
+
+  border-top: 1px solid #FFFFFFA1;
+
+  color: #C4C4CC;
+}
+
+tbody td strong {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1rem;
+
+  color: white;
+}
+
+tbody td small {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+tbody td button {
+  all: unset;
+  color: #9ff9cc;
+}
+
+tbody td button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
