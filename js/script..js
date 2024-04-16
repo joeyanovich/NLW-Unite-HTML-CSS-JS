@@ -70,6 +70,12 @@ let attendees = [
 
 
 const createNewAttendee = (attendee) => {
+  const registeredAt = dayjs(Date.now())
+    .to(attendee.registeredAt)
+
+  const checkInAt = dayjs(Date.now())
+    .to(attendee.checkInAt)
+
   return `
     <tr>
       <td>
@@ -77,8 +83,8 @@ const createNewAttendee = (attendee) => {
         <br>
         <small>${attendee.email}</small>
       </td>
-      <td>${attendee.registeredAt}</td>
-      <td>${attendee.checkInAt}</td>
+      <td>${registeredAt}</td>
+      <td>${checkInAt}</td>
     </tr>
   `
 }
