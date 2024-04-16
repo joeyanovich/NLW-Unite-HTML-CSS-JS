@@ -14,7 +14,31 @@
   <title>NLW Unite</title>
 </head>
 <body>
-  <table>
+  <form onsubmit="addAttendee(event)">
+    <fieldset>
+      <legend>Inscrição</legend>
+
+      <div>
+        <input
+          type="text"
+          placeholder="Nome completo"
+          name="name"
+          required
+        />
+        <input
+          type="email"
+          placeholder="E-mail"
+          name="email"
+          required
+        />
+        <button>
+          Realizar inscrição
+        </button>
+      </div>
+    </fieldset>
+  </form>
+
+  <table style="width: 100%;">
     <thead>
       <tr>
         <th>Participante</th>
